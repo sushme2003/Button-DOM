@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            justify-content: center;
+            margin:10px;
+
+        }
+        #first,#second,#third,#reset{
+            width: 30%; 
+            height: 50px; 
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body id="body">
+    <div class="box"> 
+    <button id="first" onclick="f1()">first</button>
+    <br>
+    <button id="second" onclick="f2()">second</button>
+    <br>
+    <button id="third" onclick="f3()">third</button>
+    <br>
+    <button id="reset" onclick="f4()">Reset</button>
+</div>
+
+
+    
+</body>
+<script> 
+    function f1(){
+        const f=document.getElementById("first");
+        const b=document.getElementById("body");
+        f.style.backgroundColor="red";
+        b.style.backgroundColor="red"
+        }
+        function f2(){
+            const s=document.getElementById("second");
+            const b=document.getElementById("body");
+            s.style.backgroundColor="blue";
+            b.style.backgroundColor="blue"
+        }
+        function f3(){
+            const t=document.getElementById("third");
+            const b=document.getElementById("body");
+            t.style.backgroundColor="green"
+            b.style.backgroundColor="green";
+
+        }
+        function f4(){
+            const r=document.getElementById("reset");
+            const b=document.getElementById("body");
+            b.style.backgroundColor="beige";
+            const f1=document.getElementById("first");
+            const f2=document.getElementById("second");
+            const f3=document.getElementById("third");
+            f1.style.backgroundColor="beige";
+            f2.style.backgroundColor="beige";
+            f3.style.backgroundColor="beige";
+
+
+
+
+        }
+</script>
+</html>
